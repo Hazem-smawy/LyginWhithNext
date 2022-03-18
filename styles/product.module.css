@@ -1,0 +1,234 @@
+.productContainer {
+    margin-top: 1rem;
+    border-radius:1rem;
+    position: relative;
+    margin-bottom: 3rem;
+}
+.productImage {
+    overflow: hidden;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    box-shadow: 0px 1px 5px 1px rgb(0 0 0 / 25%);
+}
+.productImage img {
+    border-radius: 1rem;
+}
+.titleAndPrice {
+    position: relative;
+    margin:1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 5px 1px rgb(0 0 0 / 25%);
+}
+.title {
+    font-size: 1.5rem;
+    color: #607d8b;
+    font-weight: lighter;
+}
+.price {
+
+    position: absolute;
+    font-size: 1.6rem;
+    color: #555;
+    color: #1e27ac;
+    top: -66px;
+    right: -3px;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+.price span {
+    color:purple;
+    font-size:1.3rem;
+}
+.starAndCounter {
+    margin:1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 5px 1px rgb(0 0 0 / 25%);
+}
+.star {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.starIcon {
+    font-size:2rem;
+    color:#ccb115;
+
+}
+.star span {
+    font-size:1.5rem;
+    flex: 1;
+}
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.counter span {
+    width:30px;
+    height:30px;
+    aspect-ratio:1/1;
+    display: inline-block;
+    border-radius: 50%;
+    padding: .5rem;
+    border: 1px solid #111;
+    margin-right: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color:#fff;
+    background:#444;
+}
+.counter .quantity {
+    border: none;
+    background-color: #EEE;
+    color:#111;
+    width: 20px;
+}
+.description {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 5px 1px rgb(0 0 0 / 25%);
+}
+.description p {
+    margin-top: 1rem;
+    color:#777;
+    line-height: 1.5rem;
+}
+.addToCardContainer {
+    box-shadow: 0px 1px 5px 1px rgb(0 0 0 / 25%);
+    background-color: #fff;
+    padding: .5rem 1rem .5rem;
+    border-radius: .5rem;
+    width:100vw;
+    position: fixed;
+    bottom: 0px;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index:1000;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.addToCard {
+    display: flex;
+    justify-content: space-between;
+}
+.contact {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.contact > * {
+    font-size: 1.5rem;
+}
+.like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #777;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 50px;
+    background: #eee;
+}
+.likeIcon {
+    font-size:1.5rem;
+
+}
+.btn {
+    border-radius: 1rem;
+    background-color: #444;
+    font: 1.7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1 1;
+    
+    margin-left: 1.5rem;
+    padding: .3rem;
+    color: #fff;
+}
+.btnIcon {
+    background-color: #777;
+    padding:.2rem;
+    border-radius: 50%;
+    width: 30px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:767px){
+    .productImage {
+        max-width: 50%;
+    }
+    
+.titleAndPrice {
+    position: absolute;
+    margin: 1.5rem 0;
+ 
+    padding: 1rem;
+    background-color: #eee;
+    right: 0;
+    top: 0;
+    width: 45%;
+}
+
+.price {
+
+    position: static;
+  
+}
+ 
+
+.starAndCounter {
+    position: absolute;
+    right: 0;
+    width: 45%;
+    top: 7rem;
+}
+.description{
+    max-width: 50%;
+}
+.addToCardContainer {
+    top: 19rem;
+    position: absolute;
+    width: 45%;
+    right: 0;
+    transform: translate(10%, -20%);
+}
+.addToCard {
+    display: flex;
+    justify-content: space-between;
+}
+.contact {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.contact > * {
+    font-size: 2rem;
+}
+
+}

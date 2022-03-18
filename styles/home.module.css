@@ -1,0 +1,16 @@
+.list {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: -1.875em;
+    column-count: 3;
+    column-gap: 1.875em;
+    column-fill:auto;
+
+}
+.item {
+    overflow: hidden;
+    border-radius: .7rem;
+    margin-bottom: 1.875em;
+    -webkit-column-break-inside:avoid;
+    border: 1px solid #777;
+}

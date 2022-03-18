@@ -1,0 +1,33 @@
+.cat {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    max-width: 90vw;
+    padding-bottom: 1rem;
+}
+
+.cat li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: #e4e1e1;
+    border-radius: 0.5rem;
+    letter-spacing: 1px;
+    color: #000;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    /* box-shadow: 10px 10px 10px 10px inset #709bfd80; */
+}
+
+.cat li .catIcon {
+    margin-right: .5rem;
+    color: #111;
+}
+@media (min-width:767px){
+    .cat {
+        overflow-x: visible;
+    }
+}

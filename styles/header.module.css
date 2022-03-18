@@ -1,0 +1,164 @@
+.header {
+    margin-top: 1rem;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 5px 0;
+    color: rgb(107, 103, 103);
+}
+
+.searchBar {
+
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.searchBox {
+    display: flex;
+    width: 80%;
+    border: 1px solid #77777736;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 4px 0px rgb(165 162 162);
+
+}
+
+.searchBar input {
+    border-radius: .5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    flex: 3;
+    padding: .5rem 1rem;
+}
+
+.iconFilter {
+    display: flex;
+    border: 1px solid #77777736;
+    justify-content: center;
+    align-items: center;
+    background: #393980;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 4px 0px rgb(165 162 162);
+}
+.iconFilter .icon {
+    color:#fff;
+}
+.minu {
+    position: fixed;
+    width: 60vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: #654315;
+    z-index: 100;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    border-radius: 1rem;
+    transition: all .3s;
+}
+.minuClose {
+    position: fixed;
+    width: 0vw;
+    height: 0vh;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all .3s;
+    opacity: .5;
+}
+.minu >div {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.minu > div .closeBars {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.minuUl .link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem .5rem;
+    border-radius: .5rem;
+    letter-spacing: 1px;
+    position: relative;
+}
+.minuUl .link::after {
+    content: '';
+    height: 2px;
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s;
+}
+@keyframes line {
+    0%{width: 20%;}
+    50%{width: 50%;}
+    100%{width: 90%;}
+}
+.minuUl .link:hover  {
+    background-color: #805e30;
+}
+.minuUl .link:hover::after {
+    animation: line .3s linear;
+}
+.minuUl .link > span {
+    padding-right: 1rem;
+}
+
+
+@media (min-width:767px){
+    .headerContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+   
+    .searchBar {
+        margin:2rem ;
+    }
+    .minu {
+        position: absolute;
+        width: 19vw;
+        height: auto;
+        left: 6px;
+        top: 77px;
+        background-color: #654315;
+        z-index: 100;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 1rem 0.5rem;
+        border-radius: 1rem;
+        transition: all .3s;
+    }
+    
+}
+@media (min-width:900px){
+    .headerContainer {
+        width: 100%;
+        
+    }
+  
+  
+    
+}
